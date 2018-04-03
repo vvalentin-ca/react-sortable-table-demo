@@ -1,8 +1,8 @@
 {
-  "name": "table-component-sortable",
+  "name": "composant-tableau-triable",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://heydon.github.io/react-sortable-table-demo",
+  "homepage": "http://composants-inclusifs.vincent-valentin.name/donnees-tabulaires/demonstration-tableau-triable-react/",
   "dependencies": {
     "gh-pages": "^1.1.0",
     "react": "^16.3.0",

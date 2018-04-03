@@ -1,4 +1,4 @@
-# React Sortable And Responsive Table
+# Tableau responsif triable avec React
 
-* See the article here: https://inclusive-components.design/data-tables
-* See the demo here: https://heydon.github.io/react-sortable-table-demo
+* Voir l’article ici : http://composants-inclusifs.vincent-valentin.name/donnees-tabulaires/
+* Voir la démonstration ici : http://composants-inclusifs.vincent-valentin.name/donnees-tabulaires/demonstration-tableau-triable-react/

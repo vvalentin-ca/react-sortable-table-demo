@@ -116,3 +116,7 @@ th svg {
   width: auto;
   height: 1.5em;
 }
+
+i {
+  font-style: italic;
+}

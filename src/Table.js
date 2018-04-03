@@ -37,8 +37,12 @@ class Table extends React.Component {
       sortDir = 'ascending';
     }
     this.setState(prevState => ({
-      rows: prevState.rows.slice(0).sort((a, b) =>
-            sortDir === 'ascending' ? a[i] > b[i] : a[i] < b[i]),
+      rows: prevState.rows.slice(0).sort((a, b) => {
+      	a = a[i].props ? a[i].props.children : a[i];
+      	b = b[i].props ? b[i].props.children : b[i];
+      	
+      	return sortDir === 'ascending' ? a > b : a < b      
+      }),
       sortedBy: i,
       sortDir: sortDir
     }));
@@ -66,7 +70,7 @@ class Table extends React.Component {
               {this.props.caption}
               {this.state.tabindex === '0' &&
                 <div>
-                  <small>(scroll to see more)</small>
+                  <small>(Faites défiler pour en voir plus)</small>
                 </div>
               }
             </caption>
@@ -81,7 +85,7 @@ class Table extends React.Component {
                     {header}
                     {this.props.sortable &&
                       <button
-                        aria-label={`sort by ${header} in ${this.state.sortDir !== 'ascending' ? 'ascending' : 'descending'} order`}
+                        aria-label={`Tri par « ${header} » dans un ordre ${this.state.sortDir !== 'ascending' ? 'croissant' : 'décroissant'}`}
                         onClick={() => this.sortBy(i)}>
                         <Arrow
                           sortDir={this.state.sortDir}
